@@ -5,6 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'frontend',
     environment: environment,
     baseURL: '/',
+    apiURL: 'http://localhost:1776',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -44,7 +45,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'development') {
-    ENV.apiURL = "http://localhost:1776"
+    // ENV.apiURL = "http://localhost:1776"
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
