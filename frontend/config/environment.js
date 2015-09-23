@@ -5,7 +5,6 @@ module.exports = function(environment) {
     modulePrefix: 'frontend',
     environment: environment,
     baseURL: '/',
-    apiURL: 'http://localhost:1776',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -40,7 +39,12 @@ module.exports = function(environment) {
     }
   };
 
+  if (environment === 'production') {
+    // ENV.apiURL = "http://localhost:1776"
+  }
+
   if (environment === 'development') {
+    ENV.apiURL = "http://localhost:1776"
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -58,10 +62,6 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
-  }
-
-  if (environment === 'production') {
-
   }
 
   return ENV;

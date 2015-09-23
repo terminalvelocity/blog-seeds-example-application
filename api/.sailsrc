@@ -6,7 +6,6 @@
   "paths": {
     "public": "assets"
   },
-  "port": 1776,
   "generators": {
     "modules": {
       "seeds": "sails-generate-seeds-backend"

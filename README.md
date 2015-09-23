@@ -47,8 +47,8 @@ Currently to get this application to run, cd into api and run `npm install`, the
 - [ ] Comments
 - [ ] Authorization
 - [ ] Search Functionality
-- [ ] Twitter Feed Deprecation and Error Ember@2.0.2 ([Open Issue Deprecations](https://github.com/aethermx/ember-cli-twitter-feed/issues/2)) ([Open Issue twitter-wjs node Error](https://github.com/aethermx/ember-cli-twitter-feed/issues/1))
-- [ ] Deployed
+- [x] Twitter Feed Deprecation and Error Ember@2.0.2 ([Open Issue Deprecations](https://github.com/aethermx/ember-cli-twitter-feed/issues/2)) ([Open Issue twitter-wjs node Error](https://github.com/aethermx/ember-cli-twitter-feed/issues/1))
+- [x] Deployed
 - [ ] Production ready
 
 Feel free to hack on it. If you have questions or run into any problems [open an issue](https://github.com/terminalvelocity/blog-seeds-example-application/issues) or chat with us on [gitter](https://gitter.im/terminalvelocity/seeds.js).
