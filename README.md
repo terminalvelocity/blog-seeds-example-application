@@ -41,11 +41,12 @@ Currently to get this application to run, cd into api and run `npm install`, the
 
 ### Currently Implemented
 
--[x] Posts
--[x] Admin Section
--[x] Signup/Login Auth Logic working for Ember@2.0.2
--[]  Authorization.
--[]  Production ready.
+- [x] Posts
+- [x] Admin Section
+- [x] Signup/Login Auth Logic working for Ember@2.0.2
+- [ ] Comments
+- [ ] Authorization
+- [ ] Production ready
 
 Feel free to hack on it. If you have questions or run into any problems [open an issue](https://github.com/terminalvelocity/blog-seeds-example-application/issues) or chat with us on [gitter](https://gitter.im/terminalvelocity/seeds.js).
 
