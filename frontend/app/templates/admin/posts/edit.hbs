@@ -1,0 +1,11 @@
+<div class="eight wide column">
+  <div class="ui teal segment">
+    {{partial "admin/posts/form"}}
+  </div>
+</div>
+<div class="eight wide stretched column">
+  <div class="ui teal segment">
+    <h2 class="ui dividing header">{{titleize model.title}}</h2>
+    {{markdown-to-html markdown=model.body tasklists=true ghCodeBlocks=true}}
+  </div>
+</div>

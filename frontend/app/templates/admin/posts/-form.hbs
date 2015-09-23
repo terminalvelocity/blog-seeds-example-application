@@ -1,0 +1,21 @@
+<form {{action "save" on="submit"}} class="ui form">
+  <div class="required field">
+    {{input type="text" value=model.title placeholder="Title"}}
+  </div>
+  <div class="field">
+    {{ivy-codemirror
+      value=model.body
+      lineNumbers=true
+      tabSize=2
+      showCursorWhenSelecting=true
+      lineWrapping=true
+      autoCloseBrackets=true
+      viewportMargin=Infinity
+      theme="solarized"
+      mode="markdown"
+      keyMap="sublime"}}
+  </div>
+  <div class="field">
+    <input type="submit" value="Save" class="ui button primary">
+  </div>
+</form>

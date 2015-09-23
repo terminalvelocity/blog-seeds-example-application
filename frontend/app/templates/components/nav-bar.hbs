@@ -1,0 +1,17 @@
+<div class="ui container">
+  {{link-to 'Seeds' 'application' class="header item"}}
+  <div class="right menu">
+    {{link-to 'Home' 'index' class="item"}}
+    {{link-to 'Posts' 'posts.index' class="item"}}
+    {{link-to 'About' 'about' class="item"}}
+    {{#if session.isAuthenticated}}
+      {{#link-to "admin.posts" class="icon item"}}
+        <i class="wrench icon"></i>
+      {{/link-to}}
+      <a {{action 'invalidateSession'}} class="item">Logout</a>
+    {{else}}
+      {{link-to "Login" "login" class="item"}}
+      {{link-to "Signup" "signup" class="item"}}
+    {{/if}}
+  </div>
+</div>

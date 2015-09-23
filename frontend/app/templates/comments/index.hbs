@@ -1,0 +1,67 @@
+<h1>Comments list</h1>
+
+<p>
+  {{link-to "New Comment" "comments.new" class="ui button primary"}}
+</p>
+
+{{#if model.length}}
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th>
+          Body
+        </th>
+        <th>
+          Created At
+        </th>
+        <th colspan="3">
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model as |comment|}}
+        <tr>
+          <td>
+            {{comment.body}}
+          </td>
+          <td>
+            {{comment.createdAt}}
+          </td>
+          <td>
+            {{link-to "Edit" "comments.edit" comment}}
+          </td>
+          <td>
+            {{link-to "Show" "comments.show" comment}}
+          </td>
+          <td>
+            <a href="#" {{action "remove" comment}}>Remove</a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+<table class="ui table" id="blankslate">
+  <thead>
+    <tr>
+      <th>
+        Body
+      </th>
+      <th>
+        Created At
+      </th>
+      <th colspan="3">
+        Actions
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        No Comments found
+      </td>
+    </tr>
+  </tbody>
+</table>
+{{/if}}

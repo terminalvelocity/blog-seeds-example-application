@@ -1,0 +1,73 @@
+<h1>Posts list</h1>
+
+<p>
+  {{link-to "New Post" "admin.posts.new" class="ui button primary"}}
+</p>
+
+{{#if model.length}}
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th>
+          Title
+        </th>
+        <th>
+          Body
+        </th>
+        <th>
+          Created At
+        </th>
+        <th colspan="3">
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model as |post|}}
+        <tr>
+          <td>
+            {{post.title}}
+          </td>
+          <td>
+            {{truncate post.body}}
+          </td>
+          <td>
+            {{moment-format post.createdAt}}
+          </td>
+          <td>
+            {{link-to "Edit" "admin.posts.edit" post}}
+          </td>
+          <td>
+            {{link-to "Show" "posts.show" post}}
+          </td>
+          <td>
+            <a href="#" {{action "remove" post}}>Remove</a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+<table class="ui table" id="blankslate">
+  <thead>
+    <tr>
+      <th>
+        Body
+      </th>
+      <th>
+        Created At
+      </th>
+      <th colspan="3">
+        Actions
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        No Posts found
+      </td>
+    </tr>
+  </tbody>
+</table>
+{{/if}}

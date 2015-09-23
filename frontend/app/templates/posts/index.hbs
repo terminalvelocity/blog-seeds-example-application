@@ -1,0 +1,18 @@
+<div class="eleven wide column">
+  {{#each model as |post|}}
+    <div class="ui very padded teal segment">
+      <div class="ui dividing header">
+        <h1 class="ui header">{{#link-to "posts.show" post}} {{titleize post.title}} {{/link-to}}</h1>
+      </div>
+      <div class="ui subheader">
+          {{moment-format post.createdAt}}
+        </div>
+      <div class="ui basic segment">
+        {{markdown-to-html markdown=post.body tasklists=true ghCodeBlocks=true}}
+      </div>
+      {{link-to "Edit" "admin.posts.edit" post}}
+      {{link-to "Show" "posts.show" post}}
+      <a href="#" {{action "remove" post}}>Remove</a>
+    </div>
+  {{/each}}
+</div>

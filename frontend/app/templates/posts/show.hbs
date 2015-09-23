@@ -1,0 +1,11 @@
+<div class="eleven wide column">
+  <div class="ui very padded teal segment">
+    <h1 class="ui dividing teal header">{{titleize model.title}}</h1>
+    <div class="ui details">
+      {{moment-format model.createdAt}}
+    </div>
+    <div class="ui basic segment">
+      {{markdown-to-html markdown=model.body tasklists=true ghCodeBlocks=true}}
+    </div>
+  </div>
+</div>

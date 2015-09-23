@@ -1,0 +1,19 @@
+body {
+  margin-top: 3.5em;
+  background-color: #EEE;
+}
+
+.vertical.menu.social-share {
+  top: 6.2em;
+  height: auto;
+}
+
+.CodeMirror.CodeMirror-wrap {
+  height: 100%;
+  min-height: 200px;
+  box-shadow: inset 0px 0 12px -6px #000;
+}
+
+.login.column {
+  max-width: 450px;
+}
