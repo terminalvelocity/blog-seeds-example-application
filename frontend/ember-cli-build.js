@@ -11,8 +11,8 @@ module.exports = function(defaults) {
     }
   });
 
-  app.import(`${app.bowerDirectory}/codemirror/addon/edit/closebrackets.js`);
-  app.import(`${app.bowerDirectory}/codemirror/addon/edit/continuelist.js`);
+  app.import(app.bowerDirectory +  '/codemirror/addon/edit/closebrackets.js');
+  app.import(app.bowerDirectory + '/codemirror/addon/edit/continuelist.js');
 
   return app.toTree();
 };
