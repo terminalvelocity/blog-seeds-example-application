@@ -43,7 +43,7 @@
     "ember-export-application-global": "^1.0.4",
     "ember-moment": "3.6.4",
     "ember-resolver": "^2.0.2",
-    "ember-simple-auth": "simplabs/ember-simple-auth#jj-abrams",
+    "ember-simple-auth": "1.0.1",
     "ivy-codemirror": "1.2.0",
     "semantic-ui-seeds": "^1.0.1"
   }
